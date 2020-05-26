@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TableFilter"
+    }
+  },
+  "defaultProject": "TableFilter",
+  "cli": {
+    "analytics": false
+  }
 }
