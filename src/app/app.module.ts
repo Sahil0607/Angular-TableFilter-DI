@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
@@ -10,6 +11,7 @@ import { EmployeeCountComponent } from './employee/employeeCount.component';
 import { SimpleComponent } from './employee/Others/simple.component';
 import { EmployeeService } from './employee/employee.service';
 import { DependancyInjectionComponent } from './dependancy-injection/dependancy-injection.component';
+import { DiUnderhoodComponent } from './di-underhood/di-underhood.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { DependancyInjectionComponent } from './dependancy-injection/dependancy-
     EmployeeTitlePipe,
     EmployeeCountComponent,
     SimpleComponent,
-    DependancyInjectionComponent
+    DependancyInjectionComponent,
+    DiUnderhoodComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

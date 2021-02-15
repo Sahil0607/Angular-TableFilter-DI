@@ -1,0 +1,22 @@
+<p>di-underhood works!</p>
+
+<table>
+    <thead>
+        <tr>
+          <th>Id</th>
+          <th>User Id</th>
+          <th>Course Title</th>
+          <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let course of courses;">
+      <tr>
+        <td>{{course.id}}</td>
+        <td>{{course.userId}}</td>
+        <td>{{course.title | uppercase}}</td>
+        <td>{{course.body}}</td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
