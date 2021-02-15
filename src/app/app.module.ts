@@ -9,6 +9,7 @@ import { EmployeeTitlePipe } from './employee/employeeTitle.pipe';
 import { EmployeeCountComponent } from './employee/employeeCount.component';
 import { SimpleComponent } from './employee/Others/simple.component';
 import { EmployeeService } from './employee/employee.service';
+import { DependancyInjectionComponent } from './dependancy-injection/dependancy-injection.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { EmployeeService } from './employee/employee.service';
     EmployeeTitlePipe,
     EmployeeCountComponent,
     SimpleComponent,
+    DependancyInjectionComponent
   ],
   imports: [
     BrowserModule,
